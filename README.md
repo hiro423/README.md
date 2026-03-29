@@ -10,4 +10,4 @@ Aplicação interativa desenvolvida em **Python** com **Streamlit**, **Pandas** 
 ## ⚙️ Como executar localmente
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repo.git
+  <!-- Render https://readme-md-19b7.onrender.com/ -->
