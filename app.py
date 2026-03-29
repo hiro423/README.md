@@ -5,18 +5,18 @@ import streamlit as st  # type: ignore
 # Lendo os dados
 car_data = pd.read_csv('vehicles_us.csv')
 
-# Botão para histograma
-hist_button = st.button('Criar histograma')
+# Caixa de seleção para histograma
+build_histogram = st.checkbox('Criar um histograma')
 
-if hist_button:
-    st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
+if build_histogram:
+    st.write('Criando um histograma para a coluna odometer')
     fig = px.histogram(car_data, x="odometer")
     st.plotly_chart(fig, use_container_width=True)
 
-# Botão para gráfico de dispersão
-scatter_button = st.button('Criar gráfico de dispersão')
+# Caixa de seleção para gráfico de dispersão
+build_scatter = st.checkbox('Criar um gráfico de dispersão')
 
-if scatter_button:
+if build_scatter:
     st.write('Criando um gráfico de dispersão: preço vs odômetro')
     fig = px.scatter(car_data, x="odometer", y="price", title="Preço vs Odômetro")
     st.plotly_chart(fig, use_container_width=True)
