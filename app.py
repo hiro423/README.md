@@ -2,6 +2,10 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st  # type: ignore
 
+# Cabeçalho da aplicação
+st.title("🚗 Streamlit Car Data App")
+st.header("Visualização de dados de anúncios de vendas de carros")
+
 # Lendo os dados
 car_data = pd.read_csv('vehicles_us.csv')
 
